@@ -25,6 +25,7 @@ exports.getAllcustomers=async (req,res)=>{
 //                           >>>-->|DELETE_CUSTOMER|<--<<<
 exports.deleteCustomers=async (req,res)=>{
     try{
+        //you can put any field in request body for delete this perticular customer
         if(Object.keys(req.body).length==0){
     return res.status(400).send({sattus:false,message:"please provide request data for delete customers"})
         }

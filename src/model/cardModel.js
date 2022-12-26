@@ -16,7 +16,8 @@ const customerSchema = new mongoose.Schema({
         unique: true
     },
     status: {
-     type: String
+     type: String,
+     default:"ACTIVE"
     },
     vision: {
         type: String
